@@ -26,11 +26,12 @@
 
   <!-- Add your site or application content here -->
   <p>Hello world! This is HTML5 Boilerplate.</p> <!-- Paragraph element writing text to the webpage -->
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script> <!-- Uses the Modernizr library to detect HTML5 and CxSS3 features supported in browsers -->
+  <!-- Adds the jQuery Form plugin to upgrade HTML forms to use Ajax -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script> <!-- Local copy of jQuery in case CDN fails -->
+  <script src="js/plugins.js"></script> <!-- Script element that embeds JavaScript plugins -->
+  <script src="js/main.js"></script> <!-- Script element that embeds a JavaScript file named main.js -->
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

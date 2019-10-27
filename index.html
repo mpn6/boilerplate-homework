@@ -1,41 +1,46 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!doctype html> <!-- informs the browser that the data being sent is an HTML document-->
+<html class="no-js" lang=""> <!-- Means no Java Script. Used to style the webpage. If there is JavaScript, then Modernizer
+                             changes it from a "no-js" to "js" class -->
+                              <!-- Opening tag of the HTML document; all HTML should be placed inside this tag -->
 
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<head> <!-- Container for metadata; HTML placed here is not displayed on the site. Define's the page's title, character set, styles, scripts, and other meta information. -->
+  <meta charset="utf-8"> <!-- Sets the character encoding to UTF-8-->
+  <title></title> <!-- Tags for the title-->
+  <meta name="description" content=""> <!-- HTML element that describes and summarizes the contents of your page for the benefit of users and search engines -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- HTML element that gives the browser instructions on how to control the webpage's dimensions and scaling. -->
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="manifest" href="site.webmanifest"> <!-- Link HTML element that deploys Web App Manifests, aka Progressive Web Apps, to be deployed -->
+  <link rel="apple-touch-icon" href="icon.png"> <!-- Provides a logo for a webpage that can be used when a iOS user bookmarks, saves, or links the page.  -->
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css"> <!-- Links HTML to normalize.css which makes browsers render all elements more consistently and in line with modern standards. -->
+  <link rel="stylesheet" href="css/main.css"> <!-- Links HTML to a CSS stylesheet named main.css which styles the webpage.-->
 
-  <meta name="theme-color" content="#fafafa">
-</head>
+  <meta name="theme-color" content="#fafafa"> <!-- Sets a theme color that overrides the browser's default theme color -->
+</head> <!-- Closing tag of the <head> tag -->
 
-<body>
+<body> <!-- Opening tag of the body; this is where the content of the website is placed -->
+  <!-- If the user is using Internet Explorer, display a message saying their browser is outdated -->
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <p>Hello world! This is HTML5 Boilerplate.</p> <!-- Paragraph element writing text to the webpage -->
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script> <!-- Uses the Modernizr library to detect HTML5 and CxSS3 features supported in browsers -->
+  <!-- Adds the jQuery Form plugin to upgrade HTML forms to use Ajax -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script> <!-- Local copy of jQuery in case CDN fails -->
+  <script src="js/plugins.js"></script> <!-- Script element that embeds JavaScript plugins -->
+  <script src="js/main.js"></script> <!-- Script element that embeds a JavaScript file named main.js -->
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!-- These scripts load Google Analytics to your website -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
+</body> <!-- Closing tag of the body -->
 
-</html>
+</html> <!-- Closing tag of the HTML document; HTML code ends here -->
